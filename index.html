@@ -140,6 +140,11 @@
   .dl .meta { color: var(--muted); font-size: 13px; margin-top: 11px; text-align: center; }
   .warn { margin-top: 24px; background: #fff6e8; border: 1px solid #f3d49a; color: #7a5200; border-radius: 12px; padding: 13px 18px; font-size: 14.5px; display: flex; gap: 11px; align-items: flex-start; }
   .warn svg { width: 20px; height: 20px; stroke: #b8810f; fill: none; stroke-width: 1.9; flex: none; margin-top: 3px; }
+  .vids-h { text-align: center; font-size: 22px; margin: 44px 0 18px; }
+  .vids { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 520px)); gap: 22px; justify-content: center; }
+  .vid { margin: 0; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .vid video { display: block; width: 100%; aspect-ratio: 1280 / 670; background: #000; }
+  .vid figcaption { padding: 14px 18px; font-weight: 700; text-align: center; }
   .dlgrid.guide { grid-template-columns: minmax(0, 520px); justify-content: center; }
   @media (max-width: 760px){ .dlgrid { grid-template-columns: 1fr; } }
 
@@ -369,6 +374,13 @@
         <a class="btn btn-primary" href="lona-store-guide.pdf" download="Lona Store - دليل العميل.pdf">حمّل الدليل</a>
         <div class="meta">نحو 1.2 ميغابايت</div>
       </div>
+    </div>
+    <h3 class="vids-h">فيديوهات تعليمية</h3>
+    <div class="vids">
+      <figure class="vid">
+        <video controls preload="none" playsinline poster="videos/install-pc.jpg" src="videos/install-pc.mp4"></video>
+        <figcaption>تثبيت البرنامج على الكمبيوتر</figcaption>
+      </figure>
     </div>
   </div>
 </section>
