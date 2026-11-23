@@ -145,6 +145,13 @@
   .vid { margin: 0; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
   .vid video { display: block; width: 100%; aspect-ratio: 1280 / 670; background: #000; }
   .vid figcaption { padding: 14px 18px; font-weight: 700; text-align: center; }
+  .vids-p { text-align: center; color: var(--muted); margin: -8px 0 20px; }
+  .pvids { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 22px; align-items: start; }
+  .pvid { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; }
+  .pvid h4 { font-size: 18px; margin: 0 0 10px; }
+  .pvid ol { margin: 0 0 10px; padding-inline-start: 20px; font-size: 15px; line-height: 1.8; }
+  .pvid .note { color: var(--muted); font-size: 13.5px; margin: 0 0 12px; }
+  .pvid video { display: block; width: 100%; max-width: 300px; margin: 6px auto 0; aspect-ratio: 9 / 19.5; border-radius: 14px; background: #000; }
   .dlgrid.guide { grid-template-columns: minmax(0, 520px); justify-content: center; }
   @media (max-width: 760px){ .dlgrid { grid-template-columns: 1fr; } }
 
@@ -375,12 +382,69 @@
         <div class="meta">نحو 1.2 ميغابايت</div>
       </div>
     </div>
-    <h3 class="vids-h">فيديوهات تعليمية</h3>
+    <h3 class="vids-h">فيديوهات تعليمية: برنامج الكمبيوتر</h3>
     <div class="vids">
       <figure class="vid">
         <video controls preload="none" playsinline poster="videos/install-pc.jpg" src="videos/install-pc.mp4"></video>
         <figcaption>تثبيت البرنامج على الكمبيوتر</figcaption>
       </figure>
+    </div>
+    <h3 class="vids-h">فيديوهات تعليمية: تطبيق الهاتف</h3>
+    <p class="vids-p">اتبع الفيديوهات بالترتيب لتحميل التطبيق وتثبيته على هاتف أندرويد، ثم ابدأ البيع.</p>
+    <div class="pvids">
+      <article class="pvid">
+        <h4>1. تحميل التطبيق</h4>
+        <ol>
+            <li>افتح موقع <b>lonapos.com</b> من متصفح الهاتف.</li>
+            <li>انزل إلى قسم «حمّل Lona Store».</li>
+            <li>اضغط <b>«حمّل للأندرويد»</b> وانتظر حتى ينتهي التنزيل.</li>
+            <li>ستجد الملف <b dir="ltr">Lona-Store.apk</b> في التنزيلات.</li>
+        </ol>
+        <video controls preload="none" playsinline poster="videos/phone-download.jpg" src="videos/phone-download.mp4"></video>
+      </article>
+      <article class="pvid">
+        <h4>2. إيقاف حماية Google مؤقتًا</h4>
+        <ol>
+            <li>افتح متجر <b>Google Play</b> واضغط صورة حسابك في الأعلى.</li>
+            <li>اختر <b>«Play للحماية»</b> ثم رمز الإعدادات ⚙.</li>
+            <li>أوقف <b>«فحص التطبيقات باستخدام Play للحماية»</b>.</li>
+            <li>اختر <b>«الإيقاف مؤقتًا»</b>.</li>
+        </ol>
+          <p class="note">لماذا؟ لأن التطبيق يُثبَّت من موقعنا وليس من المتجر. يعود الفحص للعمل تلقائيًا في اليوم التالي.</p>
+        <video controls preload="none" playsinline poster="videos/phone-play-protect.jpg" src="videos/phone-play-protect.mp4"></video>
+      </article>
+      <article class="pvid">
+        <h4>3. إلغاء الحظر التلقائي (هواتف سامسونج)</h4>
+        <ol>
+            <li>افتح <b>الإعدادات</b> ثم <b>«الحماية والخصوصية»</b>.</li>
+            <li>انزل إلى <b>«أداة الحظر التلقائي»</b> وأوقفها.</li>
+            <li>بعدها افتح ملف <b dir="ltr">Lona-Store.apk</b> من التنزيلات واضغط <b>«تثبيت»</b>.</li>
+        </ol>
+          <p class="note">يمكنك إعادة تشغيل الأداة بعد انتهاء التثبيت.</p>
+        <video controls preload="none" playsinline poster="videos/phone-auto-blocker.jpg" src="videos/phone-auto-blocker.mp4"></video>
+      </article>
+      <article class="pvid">
+        <h4>4. الإعدادات والرخصة</h4>
+        <ol>
+            <li>في التطبيق افتح <b>«إعدادات»</b> من الشريط السفلي.</li>
+            <li>في قسم <b>«الترخيص»</b> ترى الأيام المتبقية من التجربة المجانية.</li>
+            <li>اضغط <b>«معرّف الهاتف»</b> وأرسله لنا عبر واتساب، فنرسل لك مفتاح الترخيص.</li>
+            <li>الصق المفتاح في <b>«مفتاح الترخيص»</b> واضغط <b>«تفعيل»</b>.</li>
+            <li>من <b>«تفاصيل المحل والفاتورة»</b> اكتب اسم محلك وهاتفك وعنوانك ونص الوصل ولون الفاتورة، ثم <b>«حفظ»</b>.</li>
+        </ol>
+        <video controls preload="none" playsinline poster="videos/phone-settings-licence.jpg" src="videos/phone-settings-licence.mp4"></video>
+      </article>
+      <article class="pvid">
+        <h4>5. إضافة منتج</h4>
+        <ol>
+            <li>من الرئيسية افتح <b>«المنتجات»</b> ثم منتج جديد.</li>
+            <li>امسح <b>الباركود</b> بالكاميرا، أو اضغط «باركود عشوائي».</li>
+            <li>اكتب <b>الاسم</b> واختر <b>وحدة البيع</b> (قطعة، كرتون…).</li>
+            <li>اكتب <b>سعر الشراء</b> و<b>سعر البيع</b> و<b>الكمية الموجودة</b>، وتاريخ الانتهاء إن وُجد.</li>
+            <li>اضغط <b>«حفظ»</b>. المنتج جاهز للبيع من <b>«البيع»</b>: ابحث عنه أو امسحه، وغيّر الكمية بـ − و +، ثم <b>«تأكيد»</b>.</li>
+        </ol>
+        <video controls preload="none" playsinline poster="videos/phone-add-product.jpg" src="videos/phone-add-product.mp4"></video>
+      </article>
     </div>
   </div>
 </section>
